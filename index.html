@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Louisa &amp; William — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Playfair+Display:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="locked">
+
+  <!-- Reusable flower + corner artwork -->
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="f" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <ellipse cx="50" cy="26" rx="14" ry="22" />
+        <ellipse cx="50" cy="26" rx="14" ry="22" transform="rotate(72 50 50)" />
+        <ellipse cx="50" cy="26" rx="14" ry="22" transform="rotate(144 50 50)" />
+        <ellipse cx="50" cy="26" rx="14" ry="22" transform="rotate(216 50 50)" />
+        <ellipse cx="50" cy="26" rx="14" ry="22" transform="rotate(288 50 50)" />
+      </g>
+      <circle cx="50" cy="50" r="9" fill="#e8b04a" />
+    </symbol>
+    <symbol id="c" viewBox="0 0 160 240">
+      <g fill="none" stroke="#7d8f6a" stroke-width="2.5" stroke-linecap="round">
+        <path d="M10 0C20 70 40 150 95 235" />
+        <path d="M45 0C55 60 80 120 140 190" />
+        <path d="M0 60C40 80 70 120 80 170" />
+        <path d="M0 150C30 150 55 175 60 215" />
+        <path d="M80 0C85 40 110 80 155 110" />
+      </g>
+      <g fill="#8fa27a">
+        <ellipse cx="38" cy="95" rx="5" ry="14" transform="rotate(-40 38 95)" />
+        <ellipse cx="70" cy="150" rx="5" ry="14" transform="rotate(-30 70 150)" />
+        <ellipse cx="100" cy="100" rx="5" ry="14" transform="rotate(30 100 100)" />
+        <ellipse cx="25" cy="190" rx="5" ry="13" transform="rotate(-60 25 190)" />
+        <ellipse cx="120" cy="60" rx="5" ry="13" transform="rotate(50 120 60)" />
+        <ellipse cx="60" cy="30" rx="4" ry="11" transform="rotate(-25 60 30)" />
+      </g>
+      <g fill="#e9b96a">
+        <circle cx="128" cy="130" r="4" />
+        <circle cx="50" cy="205" r="4" />
+        <circle cx="145" cy="85" r="3.5" />
+        <circle cx="90" cy="75" r="3.5" />
+      </g>
+      <use href="#f" x="8" y="60" width="58" height="58" style="color:#e8814a" />
+      <use href="#f" x="60" y="120" width="44" height="44" style="color:#e9a3a0" />
+      <use href="#f" x="105" y="150" width="38" height="38" style="color:#6f8fc9" />
+      <use href="#f" x="68" y="38" width="34" height="34" style="color:#d9604a" />
+      <use href="#f" x="0" y="140" width="34" height="34" style="color:#e9a3a0" />
+      <use href="#f" x="112" y="62" width="30" height="30" style="color:#f0a14a" />
+      <use href="#f" x="22" y="0" width="32" height="32" style="color:#6f8fc9" />
+      <use href="#f" x="14" y="196" width="30" height="30" style="color:#e8814a" />
+      <use href="#f" x="96" y="200" width="26" height="26" style="color:#d9604a" />
+    </symbol>
+  </svg>
+
+  <!-- 1. Envelope intro -->
+  <section id="intro">
+    <svg class="corner tl">
+      <use href="#c" />
+    </svg><svg class="corner tr">
+      <use href="#c" />
+    </svg>
+    <svg class="corner bl">
+      <use href="#c" />
+    </svg><svg class="corner br">
+      <use href="#c" />
+    </svg>
+    <div class="env" id="env" role="button" tabindex="0" aria-label="Tap to open the invitation">
+      <div class="card"></div>
+      <div class="inside"></div>
+      <div class="pocket"></div>
+      <div class="flap"></div>
+      <div class="seal"><svg viewBox="0 0 100 100">
+          <use href="#f" style="color:#8a5a12" />
+        </svg></div>
+      <p class="tap">Tap to open</p>
+    </div>
+  </section>
+
+  <!-- 2. Invitation -->
+  <main id="main">
+    <header class="hero">
+      <svg class="corner tl">
+        <use href="#c" />
+      </svg><svg class="corner tr">
+        <use href="#c" />
+      </svg>
+      <svg class="corner bl">
+        <use href="#c" />
+      </svg><svg class="corner br">
+        <use href="#c" />
+      </svg>
+      <p class="kicker">Among the wildflowers</p>
+      <h1 class="names">Zayan Khan<span>&amp;</span> Ayzal Fatima</h1>
+      <p class="date">June 12, 2027</p>
+      <p class="note">Together with their families, they joyfully invite you to celebrate their wedding.</p>
+      <p class="scroll">Scroll<span>⌄</span></p>
+    </header>
+
+    <section class="sec reveal" id="schedule">
+      <h2>Schedule</h2>
+      <p class="sub">Details of the day</p>
+      <div class="item"><span class="time">3:00 PM</span><b>Nikkah Ceremony</b><small>Garden Pavilion</small></div>
+      <div class="item"><span class="time">4:30 PM</span><b>Food &amp; Refreshments</b><small>Terrace Lawn</small></div>
+      <div class="item"><span class="time">6:00 PM</span><b>Dua & Family Photos </b><small>Garden Pavilion</small></div>
+      <div class="item"><span class="time">8:00 PM</span><b>Dinner</b><small>Grand Hall</small></div>
+    </section>
+
+    <section class="sec reveal" id="faq">
+      <h2>FAQ</h2>
+      <div class="q"><button>What should I wear?</button>
+        <p>Ladies: Pastel floral chiffon / lawn 3-piece & Gents: Pastel kurta pajama ya kurta + waistcoat.</p>
+      </div>
+      <div class="q"><button>Is parking available?</button>
+        <p>Yes, free parking is available at the venue.</p>
+      </div>
+      <div class="q"><button>Do you have a dietary requirement?</button>
+        <p>Please let us know in advance and we will arrange it.</p>
+      </div>
+    </section>
+
+    <footer>With love, Zayan &amp; Ayzal</footer>
+  </main>
+
+  <button id="music" aria-label="Toggle music" hidden>🔊</button>
+  <audio id="song" src="leberch-wedding-piano-595793.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
